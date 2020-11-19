@@ -1,0 +1,17 @@
+html
+  head
+    title=title
+    link(rel="stylesheet", href="style.css")
+  body    
+
+    each category in data
+      h3=category.title
+      each command in category.commands
+        p=command.description      
+        each item in command.codes
+          if item[0] !== '$'          
+            code=item            
+          else
+            i=item.substring(1)
+          br
+        

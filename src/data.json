@@ -1,0 +1,33 @@
+[{
+    "title": "git",
+    "commands": [
+        {
+            "description": "push code to remote repository",
+            "codes": ["git push"],
+            "freq": 3
+        },
+        {
+            "description": "delete remote branch",
+            "codes": ["git push --delete origin [branch_name]"],
+            "freq": 1
+        },
+        {
+            "description": "revert all local uncommitted changes",
+            "codes": [
+                "git checkout .", 
+                "$or another way that works from any subdirectory",
+                "git reset --hard HEAD"
+            ],
+            "freq": 4
+        }
+    ]
+},
+{
+    "title": "docker",
+    "commands": [{
+        "description": "list all containers whether they are running or not",
+        "codes": ["docker container ls -a", "docker ps -a"],
+        "freq": 2
+    }]
+}
+]
